@@ -1,13 +1,9 @@
 const express = require('express')
 const router = express.Router()
 const mongoose = require('mongoose')
-const User = mongoose.model("User")
 const Product = mongoose.model("Product")
 const Slider = mongoose.model("Slider")
-const jwt = require('jsonwebtoken')
-const JWT_SECRET = process.env.JWT_SECRET
-const bcrypt = require('bcryptjs')
-const requireLogin = require('../middleware/requireLogin')
+
 
 router.post('/addproduct',(req, res) => {
     const {admintoken, name ,discription ,type, pic ,price } = req.body
@@ -41,6 +37,7 @@ router.post('/addproduct',(req, res) => {
 
 router.get('/allproducts',(req,res)=>{
     Product.find()
+    .sort('-createdAt')
         .then(result => {
             res.json(result)
         }).catch(error => {

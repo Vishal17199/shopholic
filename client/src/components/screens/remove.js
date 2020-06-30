@@ -64,7 +64,7 @@ function Remove(){
                   
                   <div className="card-content">
                   <span className="card-title"><b>{items.name}</b><span style={{float:"right"}}>{items.price} Rs</span> </span>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    <p>{items.discription}</p>
                   </div>
                 </div>
                 </div>

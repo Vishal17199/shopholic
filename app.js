@@ -7,10 +7,9 @@ const database = require('./database')
 var bodyParser = require('body-parser')
 const morgan = require('morgan')
 
-require('./modal/user')
+
 require('./modal/products')
 require('./modal/slider')
-require('./modal/sale')
 
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.json())

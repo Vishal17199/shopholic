@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {  useHistory} from 'react-router-dom'
+import {  useHistory, Link} from 'react-router-dom'
 import M from 'materialize-css'
 
 function AdminSignin(){
@@ -52,9 +52,14 @@ function AdminSignin(){
         onClick={()=>postData()}      
          >signin</button>
           <h5>
-
           </h5>
-        </div>
+      </div>
+      <div style={{display:"flex",justifyContent:"center"}}>
+        
+      <Link to="/admindashboard"><h5>Go To Dashboard</h5>
+  </Link>
+      </div>
+  
       </div>
     </div>
 )

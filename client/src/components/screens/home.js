@@ -8,7 +8,6 @@ function Home() {
   const history = useHistory()
   const [slider1, setSlider1] = useState("")
   const [slider2, setSlider2] = useState("")
-  const [slider3, setSlider3] = useState("")
   const [latest1, setLatest1] = useState()
   const [latest2, setLatest2] = useState()
   const [latest3, setLatest3] = useState()
@@ -22,7 +21,6 @@ function Home() {
       .then(result => {
         setSlider1(result.data[0].pic)
         setSlider2(result.data[1].pic)
-        setSlider3(result.data[2].pic)
       }).catch((err) => {
         console.log(err)
       })
@@ -46,7 +44,7 @@ function Home() {
 <>{
   latest3?
 <div>
- <img style={{margin:"0px",padding:"0px",width:"100%"}} src={slider1}></img>
+ <img style={{width:"100%",maxHeight:"550px"}} src={slider1} ></img>
       <hr />
       <h2 style={{ textAlign: "center" }}>  MENS FASHION</h2>
 

@@ -22,7 +22,7 @@ function Mensshirt(){
             })
         },[])
 
-      console.log(mensshirt)
+  
     return(
     <div>
      <div style={{textAlign:'center'}}><h3>mens shirt</h3></div>   

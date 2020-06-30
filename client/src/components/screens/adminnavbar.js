@@ -12,8 +12,8 @@ const at=localStorage.getItem('at')
 <nav className="nav-extended">
 <div className="nav-wrapper">
   <a className="brand-logo">Dashboard</a>
-  <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
-  <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <a data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+  <ul id="nav-mobile" className="right hide-on-med-and-down">
   {at?<li><a onClick={()=>{
     localStorage.removeItem('at')
     window.location.reload(false)
@@ -35,10 +35,11 @@ const at=localStorage.getItem('at')
 </nav>
 
 <ul className="sidenav" id="mobile-demo">
-<li><a href="sass.html">Sass</a></li>
-<li><a href="badges.html">Components</a></li>
-<li><a href="collapsible.html">JavaScript</a></li>
-</ul>
+{at?<li><a onClick={()=>{
+    localStorage.removeItem('at')
+    window.location.reload(false)
+    }}>Logout</a></li> : <li><Link to="adminsignin">signin</Link></li>
+}</ul>
 
 </div> 
 )
