@@ -14,12 +14,8 @@ function Navbar() {
       <nav>
         <div className="nav-wrapper" >
           <Link to="/" className="brand-logo">&nbsp;Shopholic</Link>
-          <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
           
           <ul className="right hide-on-med-and-down">
-
-          <li><input className="input"/></li>
-          <li><i className="material-icons">search</i></li>,
           </ul>
         </div>
       </nav>

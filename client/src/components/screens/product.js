@@ -52,7 +52,29 @@ return(
     </div>
     </div>
 </div>
-:"Loading"
+:
+<div 
+style={{
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  marginLeft:"40%",
+  marginTop:"80px",
+  marginBottom:"80px"
+}}
+class="preloader-wrapper big active">
+  <div class="spinner-layer spinner-blue-only">
+    <div class="circle-clipper left">
+      <div class="circle"></div>
+    </div><div class="gap-patch">
+      <div class="circle"></div>
+    </div><div class="circle-clipper right">
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>
+
+
 
     }
 </div>
