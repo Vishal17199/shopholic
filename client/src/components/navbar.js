@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'react-router-dom'
 import M from 'materialize-css'
-
+//Navbar
 function Navbar() {
   document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.sidenav');

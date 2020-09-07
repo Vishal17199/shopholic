@@ -1,6 +1,10 @@
 import React from 'react';
 import M from 'materialize-css'
 import { Link } from 'react-router-dom';
+
+//this navbar is for admin Dashboard 
+//admin signin , Logout button is available here
+
 function AdminNavbar(){
 const at=localStorage.getItem('at')
   document.addEventListener('DOMContentLoaded', function () {

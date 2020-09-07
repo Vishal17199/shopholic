@@ -2,6 +2,9 @@ import React,{useState, useEffect} from 'react'
 import {  useHistory} from 'react-router-dom'
 import M from 'materialize-css'
 
+//admin can add prodcuts on website database using this page
+//login is must other a popup will show 
+
 function Add(){
   const [name,setName]=useState('')
     const [discription,setDiscription]=useState('')

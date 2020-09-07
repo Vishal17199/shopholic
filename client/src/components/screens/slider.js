@@ -2,6 +2,9 @@ import React,{useState, useEffect} from 'react'
 import {  useHistory} from 'react-router-dom'
 import M from 'materialize-css'
 
+//from this page admin can change banner of website
+// its available in admin dashboard , admin login is need to perfrom this action
+
 function Slider(){
     const [url,setUrl]=useState('')
     const [image,setImage]=useState("")

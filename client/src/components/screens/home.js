@@ -3,7 +3,8 @@ import { useHistory, Link } from 'react-router-dom'
 
 function Home() {
 
-
+//Home page of site, this will show products according to catagory and latest arrival
+//user can navigate from here
 
   const history = useHistory()
   const [slider1, setSlider1] = useState("")

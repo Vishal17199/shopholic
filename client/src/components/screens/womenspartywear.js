@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import { Link} from 'react-router-dom'
 
+//this page show all womens party wear dresses available on website
 
 function Womenspartywear(){
 

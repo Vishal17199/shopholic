@@ -2,6 +2,9 @@ import React,{useState} from 'react'
 import {  useHistory, Link} from 'react-router-dom'
 import M from 'materialize-css'
 
+//in this page admin signin ,just need to put id and password
+
+
 function AdminSignin(){
     const [adminId,setAdminId]=useState('')
     const [adminPassword,setAdminPassword]=useState('')
